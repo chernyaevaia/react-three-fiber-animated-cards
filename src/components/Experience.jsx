@@ -1,6 +1,5 @@
 import {
   CameraControls,
-  Environment,
   MeshPortalMaterial,
   RoundedBox,
   Text,
@@ -42,7 +41,6 @@ export const Experience = () => {
   return (
     <>
       <ambientLight intensity={0.5} />
-      <Environment preset="sunset" />
       <CameraControls
         ref={controlsRef}
         maxPolarAngle={Math.PI / 2}
@@ -134,7 +132,6 @@ const MonsterStage = ({
       >
         <MeshPortalMaterial ref={portalMaterial} side={THREE.DoubleSide}>
           <ambientLight intensity={1} />
-          <Environment preset="sunset" />
           {children}
           <mesh>
             <sphereGeometry args={[5, 64, 64]} />
