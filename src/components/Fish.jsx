@@ -8,7 +8,7 @@ import React, { useEffect, useRef } from "react";
 
 export function Fish({ hovered, ...props }) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/models/Fish.gltf");
+  const { nodes, materials, animations } = useGLTF("./models/Fish.gltf");
   const { actions } = useAnimations(animations, group);
 
   useEffect(() => {
@@ -66,4 +66,4 @@ export function Fish({ hovered, ...props }) {
   );
 }
 
-useGLTF.preload("/models/Fish.gltf");
+useGLTF.preload("./models/Fish.gltf");

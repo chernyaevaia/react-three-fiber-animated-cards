@@ -9,7 +9,7 @@ import React, { useEffect, useRef } from "react";
 export function DragonEvolved({ hovered, ...props }) {
   const group = useRef();
   const { nodes, materials, animations } = useGLTF(
-    "/models/Dragon_Evolved.gltf"
+    "./models/Dragon_Evolved.gltf"
   );
   const { actions } = useAnimations(animations, group);
 
@@ -62,4 +62,4 @@ export function DragonEvolved({ hovered, ...props }) {
   );
 }
 
-useGLTF.preload("/models/Dragon_Evolved.gltf");
+useGLTF.preload("./models/Dragon_Evolved.gltf");
