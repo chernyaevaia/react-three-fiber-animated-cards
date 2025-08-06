@@ -11,7 +11,7 @@ import { useFrame, useThree } from "@react-three/fiber";
 import { easing } from "maath";
 import { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
-import { Cactoro } from "./Cactoro";
+import { Tribal } from "./Tribal";
 import { DragonEvolved } from "./Dragon_Evolved";
 import { Fish } from "./Fish";
 export const Experience = () => {
@@ -79,7 +79,7 @@ export const Experience = () => {
         />
       </MonsterStage>
       <MonsterStage
-        name="Cactoro"
+        name="Tribal"
         color="#739d3c"
         texture={"textures/anime_art_style_cactus_forest.jpg"}
         position-x={2.5}
@@ -89,7 +89,7 @@ export const Experience = () => {
         hovered={hovered}
         setHovered={setHovered}
       >
-        <Cactoro scale={0.45} position-y={-1} hovered={hovered === "Cactoro"} />
+        <Tribal scale={0.45} position-y={-1} hovered={hovered === "Tribal"} />
       </MonsterStage>
     </>
   );
